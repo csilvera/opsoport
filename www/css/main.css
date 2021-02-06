@@ -1,0 +1,163 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	
+}
+@font-face{
+    font-family:'arial';
+    src: local('arial'),
+         url('../fonts/arial.ttf') format('truetype');
+}
+body {
+	color: #333333;
+	font-family: 'arial';
+    background-color: #FFF;
+}
+#APP{
+	
+}
+#Estados {
+     display: none;
+    width: 100%;
+    height: 35px;
+}
+header{
+    display: inline-block;
+    width: 100%;
+    height: 120px;
+}
+.Cabecera {
+	background-color: #3498DB;
+}
+.icon-logo {
+	margin: auto;
+    margin-top: 15px;
+    display: block;
+    width: 67px;
+    height: 67px;
+    background:url('../img/logo.png');
+    background-size: 67px 67px;
+}
+.icon-b {
+	position: absolute;
+    right: 5%;
+    top: 15px;
+    width: 24px;
+    height: 24px;
+    background: url('../img/idea%20(1).png');
+    background-size: 24px 24px;
+    z-index: 9;
+}
+.fecha {
+	margin-top: 10px;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+}
+.T-pr{
+    margin: auto;
+    margin-top: 15px;
+    width: 90%;
+    height: 35px;
+    padding-top: 15px;
+    text-align: center;
+    border-radius: 4px;
+}
+.T-dep, .lista{
+    margin: auto;
+    margin-top: 10px;
+    width: 90%;
+    height: 35px;
+    padding-top: 15px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.F-pr {
+	background-color:#CCCCCC;
+}
+.F-seg {
+	background-color:#F4F6F6;
+}
+
+#Pie{
+	
+}
+.icon-f-p {
+	position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    z-index: 9;
+    background-color: white;
+}
+.ps-1 {
+	bottom: 160px;
+    right: 5%;
+}
+.ps-2 {
+	bottom: 100px;
+    right: 5%;
+}
+.refresh {
+    display: block;
+	margin: auto;
+    margin-top: 12px;
+    width: 24px;
+    height: 24px;
+    background: url('../img/actualizar.png');
+    background-size: 24px 24px;
+}
+.Whatsapp {
+    display: block;
+	margin: auto;
+    margin-top: 12px;
+    width: 24px;
+    height: 24px;
+    background: url('../img/whatsapp%20(1).png');
+    background-size: 24px 24px;
+}
+
+.sm{
+    font-size: 90%;
+}
+.sp{
+    font-size: 70%;
+}
+.sg{
+    font-size: 100%;
+}
+
+.fw{
+    font-weight: 600;
+}
+.fw-g{
+    font-weight: bold;
+}
+
+.conexion {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 10;
+    font-weight: 600;
+}
+.sinc{
+    background-color: #f8d7da;
+    color: #721c24;
+}
+.conc{
+    background-color: #d4edda;
+    color: #155724;
+}
+.act{
+   background-color: #d6d8d9;
+    color: #1b1e21; 
+}
+.clp{
+    color: #333;
+}

@@ -1,0 +1,72 @@
+<!-- ING. CESAR SILVERA-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Control de correlativos" >
+	<meta name="author" content="Ing. Cesar Silvera">
+	 <meta name="keywords" content="HTML, CSS, JavaScript, PHP">
+	 <link rel="preconnect" href="https://fonts.gstatic.com">
+	 <link rel="stylesheet" href="css/main.css" />
+	<title>GERENCIA DE OPERACIONES - CORRELATIVO</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/index.js"></script>
+	
+</head>
+
+<body>
+	<div id="APP">
+        <div id="Estados">
+            <div class="conexion">Sin conexion de red</div>
+        </div>
+        
+		<header class="Cabecera">
+            <i class="icon-logo"></i>
+            <div id="fecha" class="sp fecha fw">03/02/2021 8:16 a.m</div>
+            <i class="icon-b" id="Modo"></i>
+        </header>
+        
+        <div class="Contenido" id="Contenido">
+           
+        </div>
+		<div id="Pie"> 
+			<i class="icon-f-p ps-1">
+                <i class="refresh" id="Refresh"></i>
+            </i>
+            <i class="icon-f-p ps-2">
+                <a class="Whatsapp" target="_blank" href="https://wa.me/+584248925495&text=">
+                  <i class="Whatsapp"></i>
+                </a>
+                
+            </i>
+		</div>
+	</div>	
+   <script>
+            conexion();
+            fechaHora();
+            function fechaHora(){
+                var d = new Date();
+                var n = d.getMonth() + 1;
+                if(n < 10){
+                   var t = '0'+n;
+                }
+                var hr = d.getHours();
+                if(hr <= 11){
+                   hr = 'AM';
+                }else{
+                    hr = 'PM';
+                }
+                document.getElementById("fecha").innerHTML = d.getDate()+'/'+t+'/'+d.getFullYear()+'  '+d.getHours()+':'+d.getMinutes()+' '+hr;
+            }
+            setInterval(function(){
+                fechaHora();
+            } ,60000);
+            setInterval(function(){
+                conexion();
+            } ,900000);
+        
+        </script>
+</body>
+</html>
